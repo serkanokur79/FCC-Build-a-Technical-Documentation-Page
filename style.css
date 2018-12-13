@@ -1,0 +1,166 @@
+/* Global*/
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #FFFFFF;
+}
+
+/* nav & navbar part */
+.navbar {
+  min-width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  border-right: 5px solid darkgray;
+  margin-top: 0;
+  padding-top: 5px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.navbar header {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: #333333;
+  margin: 10px 15px;
+  padding: 5px 10px;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  list-style-type: none;
+  padding: 1rem;
+  margin: 0;
+  padding: 1rem auto;
+  border-top: 2px solid darkgray;
+}
+
+.navbar li a {
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: #444;
+}
+
+/* main part */
+main {
+  margin-left: 315px;
+  padding-top: 35px;
+}
+
+.main-section {
+  margin: 1rem 3rem;
+  padding: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  border-top: 4px solid #407D97;
+}
+
+.main-section header {
+  font-size: 2em;
+  line-height: 3rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.main-section:first-of-type {
+  width: 80%;
+  border-top: 4px solid #83CEEF;
+}
+
+.Table-title, .Tcol-header {
+  font-weight: 700;
+}
+
+table {
+  background: #F4F6F8;
+  border-collapse: collapse;
+}
+
+tr {
+  padding: 1rem;
+  text-align: left;
+  border: 2px solid white;
+}
+
+td {
+  padding: 1rem;
+  text-align: left;
+  border: 2px solid white;
+}
+
+tr:first-child td {
+  border-bottom: 4px solid #D3DCE3;
+  background: #E9EDF1;
+}
+
+.main-section img {
+  width: 100%;
+}
+
+.section-subtitle {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: black;
+  margin: 1rem 0;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.main-section code {
+  display: block;
+  white-space: pre;
+  background-color: #EDEDED;
+  border-left: 5px solid #407D97;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  border-top: 2px solid #407D97;
+}
+
+@media (max-width:768px) {
+  .navbar {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    top: 0;
+    left: 0;
+    padding: 0;
+    text-align: center;
+    border: none;
+    border-bottom: 5px solid darkgray;
+  }
+
+  .navbar li a {
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
+
+  main {
+    position: relative;
+    margin-left: 15px;
+    padding-top: 15px;
+  }
+}
